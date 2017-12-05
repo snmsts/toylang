@@ -1,0 +1,24 @@
+#use :cl-user
+//-*- c -*- fake.
+
+
+function f(o &optional z) {
+  //
+  // a b c
+  let[a (a 1),b 2,c 3] {
+    a= o.as.b $ print;
+    b=1+2+3+4*2-f[x];
+    [c d e]="hoge" \
+      "hige";
+  }
+}
+(defun f2 (x)
+ ;; "it's completely lisp inside sexpression"
+ (* x 2))
+
+function dummy() {
+  #"(declare (ignore a))"
+  {
+    f2[3] + f2[4] $ print;
+  }
+}
